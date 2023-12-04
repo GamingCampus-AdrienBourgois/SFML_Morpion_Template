@@ -21,15 +21,12 @@ void ImGuiModule::Update()
 	Module::Update();
 
 	ImGui::SFML::Update(*windowModule->GetWindow(), timeModule->GetDeltaClock().getElapsedTime());
-
-	ImGui::ShowDemoWindow();
-
-	ImGui::EndFrame();
 }
 
 void ImGuiModule::Render()
 {
 	Module::Render();
+	ImGui::EndFrame();
 
 	ImGui::SFML::Render(*windowModule->GetWindow());
 }

@@ -2,7 +2,7 @@
 
 #include "Modules/ImGuiModule.h"
 #include "Modules/InputModule.h"
-#include "Modules/SceneModule.h"
+#include "Modules/MorpionModule.h"
 #include "Modules/TimeModule.h"
 #include "Modules/WindowModule.h"
 
@@ -17,8 +17,8 @@ void ModuleManager::CreateDefaultModules()
 	CreateModule<TimeModule>();
 	CreateModule<InputModule>();
 	CreateModule<WindowModule>();
-	CreateModule<SceneModule>();
 	CreateModule<ImGuiModule>();
+	CreateModule<MorpionModule>();
 }
 
 void ModuleManager::Init() const

@@ -10,10 +10,7 @@ public:
 	sf::RenderWindow* GetWindow() const { return window; }
 
 	void Init() override;
-	void Start() override;
-	void Update() override;
 	void PreRender() override;
-	void Render() override;
 	void PostRender() override;
 	void Release() override;
 
